@@ -82,7 +82,7 @@ end
 [cmat,classNames] = confusionmat(imdsTestSet.Labels, predictedlabels); 
  cm = confusionchart(cmat,classNames);
 % Sort Classes
-sortClasses(cm,["Covid_19","SARS","normal"])
+sortClasses(cm,["COVID-19","SARS","Normal"])
 cmat=cm.NormalizedValues;
           
 [acc, sn, sp]= ConfusionMat_MultiClass (cmat,numClasses);
